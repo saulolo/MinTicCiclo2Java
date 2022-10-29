@@ -1,0 +1,1 @@
+# MinTicCiclo2Java
