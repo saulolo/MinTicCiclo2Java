@@ -31,6 +31,25 @@ public class Empleados {
             return "El empleado se llama " + nombre;
         }
         
+        //Clase operario. Clase derivada de la clase empleado
+        public static class Operario extends empleado{
+            
+            //Constructor de la clase operario
+            public Operario(String nombre) { //Herede de mi superclase empleado
+                super(nombre);
+                System.out.println("Operario/Empelado creado");
+            }
+            
+            public String toString(){
+                return super.toString();
+            }
+            
+            //VOY MIN 30
+            
+            
+        }
+        
+        
         
     
         
