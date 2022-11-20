@@ -5,22 +5,32 @@ package JavaParaDummies;
 public class main {
     
     public static void main(String[] args) {
-        //3.Creabdo Objetos
+        //4.Creabdo Objetos
         
-        SuperPersonaje miPersonaje = new SuperPersonaje();
+        SuperPersonaje miPersonaje = new SuperPersonaje("JuanMa", "teletransportarse", 50000, false);
+        System.out.println(miPersonaje.getNombre()); //Como contrui los getter, me aparece getNombre para imprimir en pantalla.
+        System.out.println(miPersonaje.getPoder()); 
         
-        System.out.println(miPersonaje);
-        System.out.println(miPersonaje.edad);
-        System.out.println(miPersonaje.);
+        miPersonaje.setValorComercial(-78); //para modificar el valor comercial tengo que setearlo
+        System.out.println(miPersonaje.getValorComercial());
         
-        miPersonaje. = 30;
-        miPersonaje.valorComercial = -85;
+        miPersonaje.setValorComercial(56);
+        System.out.println(miPersonaje.getValorComercial());
         
-        System.out.println(miPersonaje.edad);
-        System.out.println(miPersonaje.valorComercial);
+        miPersonaje.correr();  //no pongo el print porque esta en el metodo correr.
         
         
-        //  QUEDE EN 1:08;00
+        
+        
+        /*Nota: si pongo el toString puedo imprimir tota la información de mi
+        constructor sin utilizar uno por uno los getter (se hace para ahorrar
+        tiempo) pero lo debo de crear desde la clase y del main accedo a él.*/
+        
+        
+        
+        
+
+
         
         
     }
