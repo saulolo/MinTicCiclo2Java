@@ -1,6 +1,8 @@
 package empleados;
 
-import java.util.Scanner;
+import empleados.Empleados.empleado.Operario;
+
+
 
 /* @author: Saulolo */
 
@@ -16,17 +18,17 @@ public class Empleados {
         }
 
         public String getNombre() { //Método Get
-            return nombre;
+            return "Desde la clase empelados, heredado, vemos el nombre " + nombre;
         }
 
         public void setNombre(String nombre) { //Método Set
             this.nombre = nombre;
-            System.out.println("El empleado ahora se llama " + nombre);
+            //System.out.println("El empleado ahora se llama " + nombre);
         }
         
         //Método toString()
         //devuelve un string formado por las palabras que queremos y el atributo consultado
-        @Override
+        //@Override
         public  String toString(){
             return "El empleado se llama " + nombre;
         }
@@ -40,11 +42,12 @@ public class Empleados {
                 System.out.println("Operario/Empelado creado");
             }
             
-            public String toString(){
-                return super.toString();
-            }
+            //@Override  //Esten método sobreescribe al metodo toString de la clase superior
+          //  public String toString(){
+              //  return super.toString() + " y Es operario.";
+           // }
             
-            //VOY MIN 30
+           
             
             
         }
@@ -56,14 +59,12 @@ public class Empleados {
     } 
 
     public static void main(String[] args) { //Método principal
-        Scanner input = new Scanner(System.in); //Creamos un objeto de tipo Scanner para hacer input
-        empleado no1 = new empleado("Roberto");//Creamos el objeto empleado
         
-        System.out.println("Ingrese el nuevo nombre: "); //Mostrar mensaje en pantalla pidiendo el nombre del nuevo empleado
-        String nuevoNombre = input.nextLine(); //Nueva variable alimentada por el usuario
+        empleado E1 = new empleado("Rafa");
+        Operario OP1 = new Operario("Alfonso");
+        //System.out.println(E1);
+        System.out.println(OP1);
         
-        no1.setNombre(nuevoNombre);
-        System.out.println(no1.toString());
-        
+ 
     }
 }

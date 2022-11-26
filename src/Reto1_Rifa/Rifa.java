@@ -1,4 +1,4 @@
-package Reto1;
+package Reto1_Rifa;
 
 import java.util.Scanner;
 
