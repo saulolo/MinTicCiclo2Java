@@ -1,4 +1,4 @@
-package Reto1_Videojuego;
+package Reto2_Videojuego;
 
 /* @author: Saulolo */
 
@@ -110,17 +110,8 @@ public class Personaje {
     }
     
     public double calcularDistanciaRespectoOrigen(){
-        return distanciaTotal - (posicionX + posicionY);
-        //la formula de la raiz
+        return distanciaTotal - (Math.sqrt(Math.pow(posicionX, 2) + Math.pow(posicionY, 2)));
+        
     }
-    
-    
-    
-    
-    
-
-    
-    
-    
 
 }

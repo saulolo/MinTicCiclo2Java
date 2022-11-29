@@ -1,4 +1,4 @@
-package Reto1_Videojuego;
+package Reto2_Videojuego;
 
 /* @author: Saulolo */
 
@@ -16,7 +16,7 @@ public class Main {
         
         System.out.println(miPersonaje1.getVida());
         miPersonaje1.usarBotiquin();
-        System.out.println(miPersonaje1.getVida());
+        System.out.println(miPersonaje1.calcularDistanciaRespectoOrigen());
         
     }
 
