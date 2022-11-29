@@ -1,69 +1,52 @@
 package JavaDummiesHerenciaInterfaz;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 /* @author: Saulolo */
 
-public class Guerrero {
+public class Guerrero extends Humano{
     
-    private String nombre;
-    private char sexo;
-    private double vida;
-    private double defensa;
+    //Atributos
     private double ataque;
-    private double velocidad;
+    private ArrayList<Misiones> misiones = new ArrayList<>();
 
-    public Guerrero(String nombre, char sexo, double vida, double defensa, double ataque, double velocidad) {
-        this.nombre = nombre;
-        this.sexo = sexo;
-        this.vida = vida;
-        this.defensa = defensa;
+    
+    //Constructor
+
+    public Guerrero(String nombre, double ataque, char sexo, double vida, double defensa, double velocidad) {
+        super(nombre, sexo, vida, defensa, velocidad);
         this.ataque = ataque;
-        this.velocidad = velocidad;
     }
     
+ 
+    //Métodos
     public void atacar(){
-        
-    }
-    
-    public void caminar(){
         
     }
     
     public void defender(){
         
     }
-
-    public String getNombre() {
-        return nombre;
+    
+    public void asignarMision(Date fecha, String descripcion){
+        misiones.add(new Misiones(fecha, descripcion));
+    }
+    
+    public ArrayList<Misiones> verMisiones(){
+        return misiones;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    @Override
+    public String toString() {
+        return "Guerrero{" + 
+                "ataque=" + ataque + 
+                ", misiones=" + misiones + '}';
     }
-
-    public char getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
-    }
-
-    public double getVida() {
-        return vida;
-    }
-
-    public void setVida(double vida) {
-        this.vida = vida;
-    }
-
-    public double getDefensa() {
-        return defensa;
-    }
-
-    public void setDefensa(double defensa) {
-        this.defensa = defensa;
-    }
-
+    
+    
+    
+    //Getter and Setter
     public double getAtaque() {
         return ataque;
     }
@@ -71,13 +54,9 @@ public class Guerrero {
     public void setAtaque(double ataque) {
         this.ataque = ataque;
     }
+        
 
-    public double getVelocidad() {
-        return velocidad;
-    }
-
-    public void setVelocidad(double velocidad) {
-        this.velocidad = velocidad;
-    }
-    
 }
+    
+
+
