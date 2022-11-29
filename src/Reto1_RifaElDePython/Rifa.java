@@ -1,4 +1,4 @@
-package Reto1_Rifa;
+package Reto1_RifaElDePython;
 
 import java.util.Scanner;
 
