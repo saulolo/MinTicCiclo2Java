@@ -1,15 +1,13 @@
 package JavaDummiesHerenciaInterfaz;
 
-import java.util.ArrayList;
-import java.util.Date;
 
 /* @author: Saulolo */
 
-public class Guerrero extends Humano{
+public class Guerrero extends Humano implements IAsignable{
     
     //Atributos
     private double ataque;
-    private ArrayList<Misiones> misiones = new ArrayList<>();
+    
 
     
     //Constructor
@@ -29,19 +27,12 @@ public class Guerrero extends Humano{
         
     }
     
-    public void asignarMision(Date fecha, String descripcion){
-        misiones.add(new Misiones(fecha, descripcion));
-    }
-    
-    public ArrayList<Misiones> verMisiones(){
-        return misiones;
-    }
 
     @Override
     public String toString() {
         return "Guerrero{" + 
                 "ataque=" + ataque + 
-                ", misiones=" + misiones + '}';
+                '}';
     }
     
     
@@ -54,6 +45,8 @@ public class Guerrero extends Humano{
     public void setAtaque(double ataque) {
         this.ataque = ataque;
     }
+
+  
         
 
 }

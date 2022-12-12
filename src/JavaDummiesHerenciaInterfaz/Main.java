@@ -16,10 +16,8 @@ public class Main {
         miGuerrero1.asignarMision(new Date(), "Salvar al reino");
         System.out.println(miGuerrero1.verMisiones());
         
-        
-        
-        
-      
+        Mago miMago1 = new Mago("Saul", 'M', 100, 80, 50, 70);
+        System.out.println(miMago1.getNivelMagia());
         
     }
-}
+} 

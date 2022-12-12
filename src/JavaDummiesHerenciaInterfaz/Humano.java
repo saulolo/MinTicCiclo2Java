@@ -2,7 +2,9 @@ package JavaDummiesHerenciaInterfaz;
 
 /* @author: Saulolo */
 
-public class Humano {
+public abstract class Humano { //se define como clase abstracta para que no esta
+                               //esta clase no se deje instanciar, ya que es una
+                               // una super clase segun nuestra lógica.
     //Atributos
     private String nombre;
     private char sexo;
