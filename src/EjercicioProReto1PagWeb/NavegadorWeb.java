@@ -1,4 +1,4 @@
-package EjercicioProReto;
+package EjercicioProReto1PagWeb;
 
 import java.util.Arrays;
 
